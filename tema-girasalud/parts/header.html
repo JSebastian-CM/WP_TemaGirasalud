@@ -1,3 +1,14 @@
+<?php
+/**
+ * Title: Girasalud-Banner
+ * Slug: girasalud/banner
+ * Categories: text, banner
+ * Description: Banner para el sitio Girasalud.
+ * Keywords: [ cabecera]
+ */
+?>
+
+
 
 <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,6 +28,7 @@
         <span class="text-2xl font-bold text-gray-900">MindBridge</span>
     </div>
     <nav class="hidden md:flex space-x-8">
+        <!--
         <?php
         $args = array(
             'post_type' => 'principal',
@@ -31,6 +43,7 @@
             echo '<a href="' . get_permalink($post) . '" class="' . $active . ' hover:text-emerald-600 transition-colors duration-200">' . $post->post_title . '</a>';
         }
         ?>
+        --->
    </nav>
 </div>
 </div>
