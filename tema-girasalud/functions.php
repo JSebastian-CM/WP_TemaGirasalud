@@ -18,12 +18,13 @@ add_action('after_setup_theme', 'girasalud_setup');
 
 
 #Stylesheet
-function tema_girasalud_scripts()
+function tema_girasalud_assets()
 {
     // Enlazar el archivo style.css del tema
     wp_enqueue_style("tema-girasalud-style", get_stylesheet_uri());
+    wp_enqueue_style("tema-girasalud-tailwind", get_stylesheet_uri('styles\output.css'));
 }
-add_action("wp_enqueue_scripts", "tema_girasalud_scripts");
+add_action("wp_enqueue_scripts", "tema_girasalud_assets");
 
 function tema_incluir_cpts() {
     $archivo = "inc/cpt-ui.php"; 
